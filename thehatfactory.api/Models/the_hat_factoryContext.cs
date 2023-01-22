@@ -27,7 +27,7 @@ namespace thehatfactory.api.Models
             if (!optionsBuilder.IsConfigured)
             {
 #warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see http://go.microsoft.com/fwlink/?LinkId=723263.
-                optionsBuilder.UseSqlServer("workstation id=thehatfactory.mssql.somee.com;packet size=4096;user id=estefano97_SQLLogin_1;pwd=71dl87jihh;data source=thehatfactory.mssql.somee.com;persist security info=False;initial catalog=thehatfactory");
+                optionsBuilder.UseSqlServer("Server=tcp:thehatfactory.database.windows.net,1433;Initial Catalog=thehatfactory;Persist Security Info=False;User ID=estefano97;Password={your_password};MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;");
             }
         }
 
